@@ -7,6 +7,7 @@ body{
 }
 .headup{
  height: 30px;
+ align-content: center;
  background-color: blue;
 }
 #header_heading{
@@ -115,7 +116,6 @@ ul li ul {
 }
 ul li ul li { 
   background: white; 
-  border-radius: 7px;
   display: block; 
 }
  
@@ -180,8 +180,8 @@ ul li ul li {
   background-position: center;
   background-repeat: no-repeat;
   padding :10vw;
-  padding-top:25vh;
-  padding-bottom: 25vh;
+  padding-top:45px;
+  padding-bottom: 45px;
 }
 .buttonstyl{
   text-align: center;
@@ -192,4 +192,14 @@ ul li ul li {
   padding-bottom:5px;
   border-radius: 19px;
   background-color: red;
+}
+.header3{
+  background-color: white;
+  text-align: center;
+  padding :50px;
+  padding-top:45px;
+  padding-bottom: 45px;
+}
+.textcol{
+  color: red;
 }
