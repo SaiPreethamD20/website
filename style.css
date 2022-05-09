@@ -3,6 +3,7 @@ body{
 }
 .main_header{
     background-color: lightblue;
+    text-align: center;
     padding:10px;
 }
 .headup{
@@ -28,19 +29,18 @@ body{
 			width:100%;
 		}
 #flex1{
-justify-content: flex-end;
-padding-left: 3vw;
+  display: flex;
+  justify-content: center;
+  padding-left: 3vw;
 }
 #flex1 img
 		{
+      display: flex;
 			width:40%;
 			height:20vh;
 		}
 		
-#flex2
-{
-			
-}
+
 /* TOGGLE CSS */
 .icon
 {
@@ -175,12 +175,12 @@ ul li ul li {
 .header2{
   background-color: rgb(251, 204, 211);
   text-align: center;
-  
   background-image: url("https://toaglobal.com/wp-content/uploads/2021/08/Bucket-two-image-560x560-1.png");
   background-position: center;
+  background-size: 280px 270px;
   background-repeat: no-repeat;
   padding :10vw;
-  padding-top:45px;
+  padding-top:55px;
   padding-bottom: 45px;
 }
 .buttonstyl{
@@ -191,6 +191,7 @@ ul li ul li {
   padding-top:5px;
   padding-bottom:5px;
   border-radius: 19px;
+  border-style: none;
   background-color: red;
 }
 .header3{
