@@ -14,7 +14,7 @@ body {
 .headup {
   height: 30px;
   /* align-content: center; */
-  background-color: blue;
+  background-color: rgb(53, 53, 82);
 }
 
 #header_heading {
@@ -27,6 +27,7 @@ body {
   margin-left: 1%;
   width: 100%;
   height: 100%;
+  z-index: 0;
 
 }
 
@@ -318,7 +319,7 @@ ul li ul li a {
 /* footer */
 
 .col_white_amrc {
-  color: #FFF;
+  color: #fff;
 }
 
 footer {
@@ -352,11 +353,14 @@ footer p {
 }
 
 .footer_ul_amrc li {
-  padding: 0px 0px 5px 0px;
+  padding: 0px 0px 0px 0px;
 }
 
 .footer_ul_amrc li a {
   color: #CCC;
+  display: block;
+  padding: 2px;
+  font-size: 10px;
 }
 
 .footer_ul_amrc li a:hover {
@@ -365,9 +369,10 @@ footer p {
   color: brown;
 }
 
-.fleft {
+/* .fleft {
   float: left;
-}
+
+} */
 
 .padding-right {
   padding-right: 10px;
@@ -382,7 +387,7 @@ footer p {
 .foote_bottom_ul_amrc {
   list-style-type: none;
   padding: 0px;
-  display: table;
+  /* display: table; */
   margin-top: 10px;
   margin-right: auto;
   margin-bottom: 10px;
@@ -390,12 +395,14 @@ footer p {
 }
 
 .foote_bottom_ul_amrc li {
-  display: inline;
+  display: block;
+
 }
 
 .foote_bottom_ul_amrc li a {
-  color: #999;
+  color: rgb(255, 248, 248);
   margin: 0 12px;
+  padding: 2px;
 }
 
 .social_footer_ul {
@@ -408,11 +415,12 @@ footer p {
   padding-left: 20px;
   padding-top: 10px;
   float: left;
+
 }
 
 .social_footer_ul li a {
-  color: #CCC;
-  border: 1px solid #CCC;
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(255, 254, 254);
   padding: 8px;
   border-radius: 50%;
 }
@@ -434,14 +442,10 @@ footer p {
   box-sizing: border-box;
 }
 
-/* body {
-  font-family: 'Poppins';
 
-} */
 
 .BG {
-  /* background: url(bg1.jpeg) no-repeat;
-  background-size: cover; */
+
   background-position: center;
   width: 100%;
 
@@ -449,7 +453,6 @@ footer p {
 }
 
 nav {
-  /* background-color: rgb(227, 213, 213); */
   width: 100%;
   justify-content: end;
 
@@ -491,7 +494,7 @@ a:hover {
   transition: .5s;
 }
 
-.checkbtn {
+/* .checkbtn {
   font-size: 30px;
   color: rgb(5, 4, 4);
   float: right;
@@ -499,10 +502,99 @@ a:hover {
   margin-right: 40px;
   cursor: pointer;
   display: none;
+} */
+
+/* #check {
+  display: none;
+} */
+.toggle-buttons {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
 }
 
-#check {
-  display: none;
+
+@media (max-width:952px) {
+
+
+  /* .hides {
+    background: white;
+    width: 20%;
+    /* height: 100vh; */
+  /*z-index: 0; /* Stay on top */
+  /* top: 0px; */
+  /* Stay at the top */
+  /* rigt: -20%;
+    position: fixed;h */
+  /* transition: 0.5s;
+  } */
+  /* *0/ */
+  /* .shows {
+    background: white;
+    width: 20%; */
+  /* height: 100vh; */
+  /*z-index: 0; /* Stay on top */
+  /* top: 0px; */
+  /* Stay at the top */
+  /* right: 0%;
+    position: fixed;
+    transition: 0.5s;
+  } */
+
+
+  .toggle-buttons {
+    display: flex;
+    align-self: flex-end;
+    cursor: pointer;
+    position: absolute;
+  }
+
+  .navbar-links {
+    display: none;
+    width: 100%;
+
+    /* display: flex; */
+    /* flex-direction: column;
+    justify-content: space-evenly;
+    padding-top: 100px;
+    align-items: flex-start;
+    z-index: 1;
+    /* align-items: flex-end; */
+    /* height: auto; */
+
+    /* padding-right: 20rem; */
+
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+
+  }
+
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+
+  }
+
+  .navbar-links li {
+    text-align: center;
+
+  }
+
+  .navbar-links li a {
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar-links-active {
+    display: flex;
+  }
 }
 
 nav ul li ul li a {
@@ -513,7 +605,7 @@ nav ul li ul li a {
   ;
 }
 
-@media (max-width: 952px) {
+/* @media (max-width: 952px) {
   label.logo {
     font-size: 30px;
 
@@ -531,9 +623,9 @@ nav ul li ul li a {
     text-align: center;
     z-index: 5;
   }
-}
+} */
 
-@media (max-width: 858px) {
+/* @media (max-width: 858px) {
   .checkbtn {
     display: block;
     justify-content: end;
@@ -564,7 +656,7 @@ nav ul li ul li a {
   #check:checked~ul {
     right: 0;
   }
-}
+} */
 
 /* header 5new */
 .contain {
@@ -599,7 +691,7 @@ nav ul li ul li a {
   /* bottom: 0%; */
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 952px) {
   .box {
     width: 49%;
 
@@ -614,7 +706,7 @@ nav ul li ul li a {
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 952px) {
 
   .box {
     width: 80%;
@@ -629,7 +721,7 @@ nav ul li ul li a {
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 952px) {
   .box {
     width: 80%;
   }
