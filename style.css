@@ -5,6 +5,7 @@ body {
   width: 100%;
 }
 
+
 .main_header {
   background-color: lightblue;
   /* text-align: center; */
@@ -220,7 +221,7 @@ ul li ul li a {
 /* button style */
 .buttonstyl {
   text-align: center;
-  font-size: bold;
+  font-size: 0.7rem;
   color: white;
   padding: 15px;
   padding-top: 5px;
@@ -259,8 +260,16 @@ ul li ul li a {
   text-align: start;
   border-radius: 15px;
   margin-bottom: 50px;
-  background: #ddd;
+  background: white;
 
+}
+
+#card:hover {
+  -ms-transform: scale(1.02);
+  /* IE 9 */
+  -webkit-transform: scale(1.02);
+  /* Safari 3-8 */
+  transform: scale(1.02);
 }
 
 /* last cards */
@@ -475,6 +484,7 @@ label.logo:hover {
 nav ul {
   float: right;
   margin-right: 20px;
+  border-radius: 20px;
 }
 
 nav ul li {
@@ -494,106 +504,78 @@ a:hover {
   transition: .5s;
 }
 
-/* .checkbtn {
-  font-size: 30px;
-  color: rgb(5, 4, 4);
-  float: right;
-  line-height: 80px;
-  margin-right: 40px;
-  cursor: pointer;
-  display: none;
-} */
 
-/* #check {
-  display: none;
-} */
 .toggle-buttons {
   position: absolute;
   top: 1rem;
   right: 1rem;
   display: none;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
   width: 30px;
   height: 21px;
 }
 
+.navbar-links {
+  width: 100%;
+
+}
+
+
+
 
 @media (max-width:952px) {
-
-
-  /* .hides {
-    background: white;
-    width: 20%;
-    /* height: 100vh; */
-  /*z-index: 0; /* Stay on top */
-  /* top: 0px; */
-  /* Stay at the top */
-  /* rigt: -20%;
-    position: fixed;h */
-  /* transition: 0.5s;
-  } */
-  /* *0/ */
-  /* .shows {
-    background: white;
-    width: 20%; */
-  /* height: 100vh; */
-  /*z-index: 0; /* Stay on top */
-  /* top: 0px; */
-  /* Stay at the top */
-  /* right: 0%;
-    position: fixed;
-    transition: 0.5s;
-  } */
-
-
   .toggle-buttons {
     display: flex;
     align-self: flex-end;
     cursor: pointer;
     position: absolute;
+
   }
 
   .navbar-links {
     display: none;
-    width: 100%;
-
-    /* display: flex; */
-    /* flex-direction: column;
-    justify-content: space-evenly;
-    padding-top: 100px;
-    align-items: flex-start;
-    z-index: 1;
-    /* align-items: flex-end; */
-    /* height: auto; */
-
-    /* padding-right: 20rem; */
-
+    width: 80%;
   }
 
   .navbar {
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
-
   }
 
   .navbar-links ul {
-    width: 100%;
-    flex-direction: column;
+    width: 50%;
+    flex-direction: row;
 
   }
 
   .navbar-links li {
     text-align: center;
+    display: block;
+    align-items: flex-end;
 
   }
 
   .navbar-links li a {
     padding: 0.5rem 1rem;
+    flex-direction: row;
   }
 
   .navbar-links-active {
-    display: flex;
+    display: block;
+    flex-direction: row;
+    align-items: flex-end;
+    /* position: absolute; */
+    /* width: auto; */
+  }
+
+  .navbar ul li ul li a {
+    font-size: 10px;
+    padding: 2px;
+    text-align: center;
+    z-index: 1;
+    width: auto;
+    flex-direction: row;
   }
 }
 
@@ -602,7 +584,67 @@ nav ul li ul li a {
   padding: 2px;
   text-align: center;
   z-index: index 5;
-  ;
+}
+
+@media (max-width:480px) {
+  .toggle-buttons {
+    display: flex;
+    align-self: flex-end;
+    cursor: pointer;
+    position: absolute;
+
+  }
+
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .navbar-links ul {
+    width: 80%;
+    flex-direction: row;
+
+  }
+
+  .navbar-links li {
+    text-align: center;
+    display: block;
+    align-items: flex-end;
+  }
+
+  .navbar-links li a {
+    padding: 0.5rem 1rem;
+    flex-direction: row;
+  }
+
+  .navbar-links-active {
+    display: block;
+    flex-direction: row;
+    align-items: flex-end;
+    /* position: absolute; */
+    /* width: auto; */
+  }
+
+  .navbar ul li ul li a {
+    font-size: 10px;
+    padding: 2px;
+    text-align: center;
+    z-index: 1;
+    width: auto;
+    flex-direction: row;
+  }
+}
+
+nav ul li ul li a {
+  font-size: 10px;
+  padding: 2px;
+  text-align: center;
+  z-index: index 5;
 }
 
 /* @media (max-width: 952px) {
@@ -733,4 +775,12 @@ nav ul li ul li a {
   .boximage {
     height: 100%;
   }
+}
+
+body h1 {
+  font-size: 1.5rem;
+}
+
+body p {
+  font-size: 1.0rem;
 }
