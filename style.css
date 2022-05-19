@@ -283,6 +283,13 @@ ul li ul li a {
   transform: scale(1.02);
 }
 
+.text a:hover {
+  color: #fff;
+  text-decoration: none;
+  color: rgb(177, 0, 0);
+  font-style: normal;
+}
+
 /* last cards */
 #lastcards {
   margin-left: auto;
