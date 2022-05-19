@@ -44,9 +44,20 @@ body {
   -webkit-transform: rotate(45deg);
 }
 
+.right {
+  transform: rotate(315deg);
+  -webkit-transform: rotate(315deg);
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
 .outer-flex {
   display: flex;
   flex-direction: row;
+  padding: 0%;
   /* justify-content: space-between; */
   justify-content: flex-start;
   width: 100%;
@@ -378,6 +389,8 @@ footer p {
   color: brown;
 }
 
+
+
 /* .fleft {
   float: left;
 
@@ -647,59 +660,6 @@ nav ul li ul li a {
   z-index: index 5;
 }
 
-/* @media (max-width: 952px) {
-  label.logo {
-    font-size: 30px;
-
-    padding-left: 50px;
-  }
-
-  nav ul li a {
-    font-size: 16px;
-  }
-
-  nav ul li ul li a {
-    font-size: 10px;
-    padding: 2px;
-
-    text-align: center;
-    z-index: 5;
-  }
-} */
-
-/* @media (max-width: 858px) {
-  .checkbtn {
-    display: block;
-    justify-content: end;
-  }
-
-  nav ul li ul li a {
-    font-size: 10px;
-    padding: 2px;
-    text-align: center;
-    z-index: 5;
-  }
-
-  ul {
-    position: absolute;
-    opacity: solid;
-    background: rgba(76, 8, 235, 0.336);
-    z-index: 2;
-    text-align: center;
-    transition: all .5s;
-  }
-
-  nav ul li {
-    display: block;
-    z-index: 2;
-    padding: 2px;
-  }
-
-  #check:checked~ul {
-    right: 0;
-  }
-} */
-
 /* header 5new */
 .contain {
   width: 100%;
@@ -783,4 +743,5 @@ body h1 {
 
 body p {
   font-size: 1.0rem;
+
 }
