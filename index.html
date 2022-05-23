@@ -14,8 +14,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
-  <script src="app.js">
-  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
@@ -32,7 +33,6 @@
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
     integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-
 </head>
 
 <body>
@@ -60,13 +60,13 @@
               </li>
               <li><a style="font-size:0.7rem; width: auto;" href="#">Solutions <i class="arrow down"></i></a>
                 <ul style="z-index:1;background-color: aqua;">
-                  <li style="border-radius:15px 15px 0 0"><a href="">Accountant</a></li>
+                  <li style="border-radius:15px 15px 0 0"><a href="accountant.html">Accountant</a></li>
                   <li><a href="Bookkeeper.html">Book keeper</a></li>
-                  <li><a href="">Administrator</a></li>
+                  <li><a href="administrator.html">Administrator</a></li>
                   <li><a href="cpa.html">CPA</a></li>
-                  <li><a href="">Virtual assistant</a></li>
+                  <li><a href="virtualassisant.html">Virtual assistant</a></li>
                   <li><a href="">Locally Trained Talent</a></li>
-                  <li style="border-radius:0 0 15px 15px"><a href="">All solutions</a></li>
+                  <li style="border-radius:0 0 15px 15px"><a href="All solutions.html">All solutions</a></li>
                 </ul>
               </li>
               <li><a style="font-size:0.7rem;" href="#">Resources <i class="arrow down"></i></a>
@@ -91,7 +91,7 @@
                       <li><a href="">Book a strategy session</a></li>
                       <li><a href="">Outsourcing checklist</a></li>
                       <li><a href="">Remote team report</a></li>
-                      <li><a href="">Virtual assistant guide</a></li>
+                      <li><a href="">Virtual assistant report</a></li>
                       <li><a href="">Retain and grow talent guide</a></li>
                       <li style="border-radius:0 0 15px 15px"><a href="">Scale and grow your accounting firm</a></li>
                     </div>
@@ -124,8 +124,47 @@
             AGILE Ac is an outsourcing business, 100% for the accounting industry.We supply great offshore people to
             over 250 firms in the US and Canada. In fact, the accounting industry are the only clients we serve.
           </p>
+          <div>
+            <div class="overlay-form container">
+              <div style="text-align:center">
+                <h1 style="font-weight:bold;">Book a chat</h1>
+                <p>To find out how agile-accounting can assist your firm, please enter your details and one of our local
+                  account
+                  managers
+                  will contact you at a time that suits your schedule.</p>
+              </div>
+              <form name="google-sheet">
+                <div class="close-btn" onclick="toggleForm()">&times;</div>
+                <div class="form-element">
+                  <label>First Name: <span class="input-icon"><i class="fa fa-user"></i></span></label>
 
-          <div><button class="buttonstyl">Book a chat</button></div>
+                  <input name="First Name" type="text" class="form-control" placeholder="Enter your first name"
+                    required>
+                </div>
+                <div class="form-element">
+                  <label>Last Name: <span class="input-icon"><i class="fa fa-user"></i></span></label>
+
+                  <input name="Last Name" type="text" class="form-control" placeholder="Enter your last name" required>
+                </div>
+                <div class="form-element">
+                  <label>Email: <span class="input-icon"><i class="fa fa-envelope"></i></span></label>
+
+                  <input name="Email" type="email" class="form-control" placeholder="Enter your email" required>
+                </div>
+                <div class="form-element">
+                  <label>Phone number:<span class="input-icon"><i class="fas fa-phone-alt"></i></span></label>
+
+                  <input name="Phone number" type="number" class="form-control" placeholder="Enter your Phone number"
+                    required>
+                </div>
+                <div class="form-element ">
+                  <button>Book a chat</button>
+                </div>
+              </form>
+
+            </div>
+          </div>
+          <div><button class="buttonstyl" onclick="toggleForm()">Book a chat</button></div>
         </div>
         <div class="box">
           <img id="header_image1" src="https://toaglobal.com/wp-content/uploads/2021/07/hero-image.png.webp"
@@ -179,11 +218,11 @@
       <div class="row justify-content-center">
         <div class="col-lg-4 col-md-6 col-sm-12 text" style="padding: 20px;">
           <div id="card" style="height:100%;">
-            <a style="padding: 0; width: 100%;" href="">
+            <a style="padding: 0; width: 100%;" href="accountant.html">
               <img class="col "
                 style="padding:0%; border-top-left-radius:20px; border-top-right-radius:20px;width:100%;"
                 src="https://toaglobal.com/wp-content/uploads/2021/07/Accountant_Warm-Sand-1.jpg.webp" width="100%"></a>
-            <a href="">
+            <a href="accountant.html">
               <h4 style="font-size: 1.5rem;color: crimson;">
                 Accountant
               </h4>
@@ -259,12 +298,12 @@
         </div>
         <div class="col-lg-4 col-md-6 col-sm-12 text" style="padding: 20px;">
           <div id="card" style="height:100%;">
-            <a style="padding: 0; width: 100%;" href="">
+            <a style="padding: 0; width: 100%;" href="administrator.html">
 
               <img class="col" style="padding:0%; border-top-left-radius:20px; border-top-right-radius:20px;"
                 src="https://toaglobal.com/wp-content/uploads/2021/07/Edlyn-Canda-TOA.jpg"></a>
 
-            <a href="">
+            <a href="administrator.html">
               <h4 style="font-size: 1.5rem;color: crimson;">
                 Administrator
               </h4>
@@ -285,12 +324,12 @@
         </div>
         <div class="col-lg-4 col-md-6 col-sm-12 text" style="padding: 20px;">
           <div id="card" style="height:100%;">
-            <a style="padding: 0; width: 100%;" href="">
+            <a style="padding: 0; width: 100%;" href="virtualassisant.html">
 
               <img class="col" style="padding:0%; border-top-left-radius:20px; border-top-right-radius:20px;"
                 src="https://toaglobal.com/wp-content/uploads/2021/07/Tomas-Ricafort-Virtual-Assistant.jpg"></a>
 
-            <a href="">
+            <a href="virtualassisant.html">
               <h4 style="font-size: 1.5rem;color: crimson;">
                 Virtual Assistant
               </h4>
@@ -310,7 +349,7 @@
           </div>
         </div>
       </div>
-      <button id="lastcards" class="buttonstyl">Explore all Solutions</button>
+      <a href="All solutions.html"><button id="lastcards" class="buttonstyl">Explore all Solutions</button></a>
     </div>
   </div>
   <div class="header5">
@@ -353,7 +392,6 @@
         </div>
 
       </div>
-
     </div>
   </div>
   <div>
@@ -552,13 +590,13 @@
           <h5 class="headin5_amrc col_white_amrc pt2">Solutions</h5>
 
           <ul class="footer_ul_amrc">
-            <li><a href="">Accountant</a></li>
+            <li><a href="accountant.html">Accountant</a></li>
             <li><a href="cpa.html">CPA</a></li>
             <li><a href="Bookkeeper.html">Bookkeeper</a></li>
-            <li><a href=" ">Administrator</a></li>
-            <li><a href=" ">Virtual assistant</a></li>
+            <li><a href="administrator.html">Administrator</a></li>
+            <li><a href="virtualassisant.html">Virtual assistant</a></li>
             <li><a href=" ">Locally Trained Talent NA</a></li>
-            <li><a href=" ">All solutions</a></li>
+            <li><a href="All solutions.html">All solutions</a></li>
           </ul>
 
         </div>
@@ -607,7 +645,26 @@
   <!-- .site-footer -->
   <script src="app.js">
   </script>
+  <script>
+    const scriptURL =
+      'https://script.google.com/macros/s/AKfycbwcB0jh-EOoRCNaFolUtNu7mmfqb_x_wW8SJxMs64vGkdj9Ve3kT2_Nnk-uKEwi3IZa/exec'
+    const form = document.forms['google-sheet']
 
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, {
+          method: 'POST',
+          body: new FormData(form)
+        })
+        .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+  <script>
+    function toggleForm() {
+      document.body.classList.toggle('activeForm');
+    }
+  </script>
 </body>
 
 </html>
